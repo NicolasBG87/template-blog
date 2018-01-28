@@ -4,10 +4,13 @@ $font: 'Raleway', sans-serif;
 
 $bg-color: rgb(110,122,147);
 $orange: #FF851B;
+$grey: #343a40;
+$light: #f1f1f1;
 
 body {
   background-color: $bg-color;
   font-family: $font;
+  color: $grey;
 }
 
 .title-orange {
@@ -22,12 +25,12 @@ body {
 }
 
 .credits {
-  color: white;
+  color: $light;
   a {
     text-decoration: none;
     &:hover {
       color: $orange;
-      text-shadow: 0px 0px 100px white;
+      text-shadow: 0px 0px 100px $light;
     }
   }
 }
@@ -47,11 +50,11 @@ ul.social-media {
   li {
     display: inline;
     font-size: 2em;
-    color: white;
+    color: $light;
     margin: 0 0.3em;
     &:hover {
       cursor: pointer;
-      text-shadow: 0px 0px 100px white;
+      text-shadow: 0px 0px 100px $light;
       color: $orange;
     }
   }
@@ -72,7 +75,7 @@ ul.archives-list {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1em;
-    color: white;
+    color: $light;
     background: rgba(255, 255, 255, 0.1);
     padding: 0.5em 1em;
     margin-bottom: 0.5em;
@@ -100,17 +103,17 @@ ul.nav-list {
   }
   .nav-title {
     text-transform: capitalize;
-    color: white;
+    color: $light;
     font-size: 1em;
     h5:hover {
       cursor: pointer;
-      text-shadow: 0px 0px 100px white;
+      text-shadow: 0px 0px 100px $light;
       color: $orange;
     }
   }
   .desc {
     font-size: 0.8em;
-    color: #ccc;
+    color: $light;
   }
   li {
     position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
@@ -135,7 +138,7 @@ ul.nav-list {
     content:"";
     position: absolute;
     left: -36px; /* adjust manually */
-    border-left: 2px solid gray;
+    border-left: 2px solid $light;
     height: 100%;
     width: 1px;
   }
@@ -162,7 +165,7 @@ ul.nav-list {
 .header-btn {
   width: 50px;
   height: 50px;
-  background: white;
+  background: $light;
   border: none;
   border-radius: 50%;
   margin-top: 1em;
