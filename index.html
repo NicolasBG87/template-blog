@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <title>Template - Blog</title>
+</head>
+<body>
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Author: John Doe</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="assets/images/john-doe.png">
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><strong>Joined:</strong><br>
+                  19 April 2015
+                </li>
+                <li><strong>Posts:</strong><br>
+                  1934
+                </li>
+                <li><strong>Membership:</strong><br>
+                  Content-Writer
+                </li>
+                <li><strong>Latest Activity:</strong><br>
+                  13 minutes ago
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger">Block</button>
+          <button type="button" class="btn btn-outline-dark">Contact</button>
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="wrapper">
+    <div class="row">
+      <!-- Main section area (articles) -->
+      <div class="col-md-8 bg-light" id="main">
+        <!-- Header image & user icons -->
+        <div class="container-fluid header-img">
+          <button class="header-btn pull-left" data-toggle="modal" data-target="#modal"><i class="fa fa-user"></i></button>
+          <button class="header-btn pull-right side-bar-btn hidden"><img src="assets/images/main-bullet.png"></button>
+        </div>
+        <br>
+        <!-- Articles -->
+        <div class="container article">
+          <h1>Belgrade</h1>
+          <h6 class="handwrite"><em>by John Doe | 13 minutes ago</em></h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cum magni voluptate soluta sit aut, ullam, atque ducimus tempora voluptatibus mollitia! Eos nihil nostrum, facere impedit velit distinctio reprehenderit consequatur!
+          Aliquam commodi dicta molestiae asperiores praesentium delectus molestias a non aperiam nisi, eaque quos! Minus officiis numquam accusamus. Et pariatur dicta impedit ducimus reprehenderit, quas maiores consequatur necessitatibus non nisi?
+          Ut vitae magnam minus cum veniam saepe animi harum fuga eius cupiditate officia, delectus nobis dolores porro incidunt ullam deserunt nesciunt tempore perspiciatis, adipisci facere eos error voluptate! Culpa, quidem.
+          Quasi vitae saepe hic itaque corrupti voluptatem, atque eligendi. Ducimus quis quia modi rerum autem minus doloremque nisi eius exercitationem laudantium, ab qui repudiandae hic, iure voluptate illum labore odio.
+          Fugiat similique eius dolores hic perspiciatis, corrupti accusamus doloribus commodi voluptates ducimus natus omnis, inventore et. Quod odit debitis ea. Veniam animi provident id nulla mollitia repudiandae repellendus ex suscipit?</p>
+          <br>
+  
+          <h3>Sub Title</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum maiores deserunt, quod recusandae accusamus, laboriosam, vitae voluptas laudantium voluptatibus atque suscipit! Adipisci, suscipit exercitationem repellat maxime ducimus labore alias omnis.
+          Quas impedit illum cupiditate nam dolorum iure quaerat accusamus! Tempore consequatur, corrupti aliquam facere minima accusamus maiores maxime eum blanditiis magnam eaque ab laborum asperiores officia vel perferendis voluptatibus consequuntur!
+          Vero odit a qui deleniti optio, explicabo ex ullam maiores sed assumenda nostrum blanditiis cum cupiditate ipsum officiis neque numquam, autem sequi tempore nesciunt? Officia repellat molestiae facere similique eveniet.</p>
+          <div class="row featured-img">
+            <div class="col-md-8">
+              <div class="image-placeholder"></div>
+            </div>
+            <div class="col-md-4">
+              <p class="handwrite"><em>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed obcaecati laboriosam nobis aut ducimus, ipsa tenetur doloremque dolore."</em></p>
+            </div>
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae repudiandae minima, commodi libero inventore delectus fugit doloribus quia rem optio animi sapiente dolore quaerat itaque dolorum at placeat aliquid earum?
+          Ipsum magni, atque illum earum aspernatur quos vero doloribus cum numquam quas in, id reiciendis nisi inventore quibusdam blanditiis nesciunt exercitationem officiis mollitia tempore hic nostrum neque fuga? Tempora, neque.
+          Dolore magnam quasi accusamus, facilis vitae commodi beatae aliquam architecto qui vero ex, eligendi similique! Rem cumque dignissimos libero dolorem cum, necessitatibus velit consequuntur totam quae recusandae placeat dolore neque?</p>
+          <br>
+  
+          <h3>Conclusion</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, dicta explicabo. Corrupti expedita ea unde reiciendis eveniet nesciunt natus illo enim, voluptatibus perspiciatis soluta repellat numquam incidunt accusantium saepe ducimus.Quisquam numquam dolorum culpa atque itaque eius at nemo, quibusdam, saepe tenetur vitae debitis recusandae voluptate labore minus autem sunt ducimus laborum aspernatur. A voluptatum assumenda illum culpa! Obcaecati, delectus?</p>
+        </div>
+        <hr>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Enter name...">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="message" placeholder="Your message..." rows="5"></textarea>
+          </div>
+          <button class="btn btn-outline-dark" id="comment-btn">Submit Comment</button>
+        </form>
+      </div>
+  
+      <!-- Aside navigation/social media -->
+      <div class="col-md-4 bg-dark" id="aside">
+        <div class="container">
+          <ul class="nav-list">
+            <li class="nav-header">Featured Articles</li>
+            <li class="nav-title" id="belgrade">
+              <h5 class="title-orange">Belgrade</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author title-orange"><em>by John Doe | 13 minutes ago</em></p>
+            </li>
+            <li class="nav-title" id="dubai">
+              <h5>Dubai</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 4 hours ago</em></p>
+            </li>
+            <li class="nav-title" id="istanbul">
+              <h5>Istanbul</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 18 hours ago</em></p>
+            </li>
+            <li class="nav-title" id="london">
+              <h5>London</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 23 May 2017</em></p>
+            </li>
+            <li class="nav-title" id="moscow">
+              <h5>Moscow</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 13 May 2017</em></p>
+            </li>
+            <li class="nav-title" id="new-york">
+              <h5>New York</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 19 April 2017</em></p>
+            </li>
+            <li class="nav-title" id="paris">
+              <h5>Paris</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 2 April 2017</em></p>
+            </li>
+            <li class="nav-title" id="rome">
+              <h5>Rome</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 15 March 2017</em></p>
+            </li>
+            <li class="nav-title" id="stockholm">
+              <h5>Stockholm</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 7 March 2017</em></p>
+            </li>
+            <li class="nav-title" id="venice">
+              <h5>Venice</h5>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio recusandae omnis, repudiandae illum ducimus accusantium eaque.</p>
+              <p class="author"><em>by John Doe | 20 February 2017</em></p>
+            </li>
+          </ul>
+          <div class="container text-center">
+            <button class="btn btn-outline-light btn-view-more">VIEW MORE</button>
+          </div>
+          <ul class="archives-list">
+            <li class="archives">Archives</li>
+            <li class="archives-item">May <span class="pull-right archives-count">235</span></li>
+            <li class="archives-item">April <span class="pull-right archives-count">184</span></li>
+            <li class="archives-item">March <span class="pull-right archives-count">316</span></li>
+            <li class="archives-item">February <span class="pull-right archives-count">278</span></li>
+            <li class="archives-item">2016 <span class="pull-right archives-count">5,239</span></li>
+          </ul>
+          <ul class="social-media">
+            <li><i class="fa fa-instagram"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-pinterest"></i></li>
+            <li><i class="fa fa-youtube"></i></li>
+          </ul>
+          <div class="credits container text-center">
+            <p>&copy; 2018 by <a href="https://nicolasbg87.github.io/" target="_blank" class="handwrite">Nikola Bojanovic</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

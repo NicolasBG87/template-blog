@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  background-color: #6e7a93;
+  font-family: "Raleway", sans-serif;
+}
+
+.title-orange {
+  color: #FF851B;
+}
+
+#comment-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.credits {
+  color: white;
+}
+
+.credits a {
+  text-decoration: none;
+}
+
+.credits a:hover {
+  color: #FF851B;
+  text-shadow: 0px 0px 100px white;
+}
+
+.hidden {
+  display: none;
+}
+
+#wrapper {
+  margin: 5em auto;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+ul.social-media {
+  list-style: none;
+  margin: 2em auto;
+}
+
+ul.social-media li {
+  display: inline;
+  font-size: 2em;
+  color: white;
+  margin: 0 0.3em;
+}
+
+ul.social-media li:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 100px white;
+  color: #FF851B;
+}
+
+ul.archives-list {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul.archives-list .archives {
+  text-transform: uppercase;
+  color: #FF851B;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+ul.archives-list .archives-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  border-radius: 20px;
+}
+
+ul.archives-list .archives-item:hover {
+  cursor: pointer;
+  color: #FF851B;
+}
+
+ul.archives-list .archives-count {
+  color: #FF851B;
+  font-style: italic;
+}
+
+ul.nav-list {
+  list-style: none;
+  margin: 1em 2em;
+  padding: 0;
+}
+
+ul.nav-list .nav-header {
+  text-transform: uppercase;
+  color: #FF851B;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul.nav-list .nav-title {
+  text-transform: capitalize;
+  color: white;
+  font-size: 1em;
+}
+
+ul.nav-list .nav-title h5:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 100px white;
+  color: #FF851B;
+}
+
+ul.nav-list .desc {
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+ul.nav-list li {
+  position: relative;
+  /* so that pseudoelements are positioned relatively to their "li"s*/
+  /* use padding-bottom instead of margin-bottom.*/
+  margin-bottom: 0;
+  /* This overrides previously specified margin-bottom */
+  padding-bottom: 1.5em;
+}
+
+ul.nav-list li:after {
+  /* bullets */
+  content: url("../images/bullet.png");
+  position: absolute;
+  left: -45px;
+  /*adjust manually*/
+  top: 2px;
+}
+
+ul.nav-list li:first-child::after {
+  content: url("../images/main-bullet.png");
+  left: -55px;
+  /*adjust manually*/
+  top: -7px;
+}
+
+ul.nav-list li:before {
+  /* lines */
+  content: "";
+  position: absolute;
+  left: -36px;
+  /* adjust manually */
+  border-left: 2px solid gray;
+  height: 100%;
+  width: 1px;
+}
+
+ul.nav-list li:first-child:before {
+  /* first li's line */
+  top: 7px;
+  /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+ul.nav-list li:last-child:before {
+  /* last li's line */
+  height: 7px;
+  /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+
+.header-img {
+  background-image: url("../images/belgrade.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1em;
+  width: 100%;
+  height: 300px;
+}
+
+.header-btn {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  margin-top: 1em;
+  color: #FF851B;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header-btn:hover {
+  cursor: pointer;
+}
+
+.btn-view-more {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 1em auto;
+}
+
+.handwrite {
+  color: #FF851B;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.handwrite {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.article {
+  width: 70%;
+  text-align: justify;
+}
+
+.featured-img {
+  margin: 3em 0;
+}
+
+.featured-img .image-placeholder {
+  background: url("../images/feature.jpeg");
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+
+.featured-img .handwrite {
+  text-align: left;
+}
+
+#main {
+  padding-bottom: 2em;
+}
+
+#modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#modal img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .side-bar-btn {
+    display: block;
+  }
+  #aside {
+    display: none;
+    position: absolute;
+    top: 5em;
+    right: 0;
+    min-width: 50%;
+  }
+  #main {
+    max-width: 100%;
+    flex: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
