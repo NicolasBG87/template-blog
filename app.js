@@ -1,21 +1,27 @@
+// Side bar click event
 $(".nav-title h5").on("click", function(){
+  // Change color of all titles and authors to white
   $(".nav-title h5").css("color", "white");
   $(".nav-title .author").css("color", "white");
+  // For screens less than a avg. laptop width
   if ($(window).width() < 1023) {
+    // Hide sidebar
     $("#aside").css("display", "none");
+    // Show button in the upper right corner of the main picture that toggles sidebar 
     $(".side-bar-btn").css("display", "block");
   } else {
     $("#aside").css("display", "block");
     $(".side-bar-btn").css("display", "none");
   }
+  // HTML variables
   let title = this;
   let author = this.nextElementSibling.nextElementSibling;
   let id = this.parentElement.id;
   let li = this.parentElement;
-
+  // Change color of title and author to orange
   title.style.color = "#FF851B";
   author.style.color = "#FF851B";
-
+  // Fill main area with dummy data using title & author from the sidebar
   $(".article").html(`
     <h1>${title.textContent}</h1>
     <h6 class="handwrite"><em>${author.textContent}</em></h6>
@@ -48,10 +54,8 @@ $(".nav-title h5").on("click", function(){
   `);
   $(".header-img").css("background-image", `url("assets/images/${id}.jpeg")`);
 });
-
+// Show sidebar
 $(".side-bar-btn").click(() =>{
   let aside = document.getElementById("aside");
   aside.style.display = "block";
-
-
 });
